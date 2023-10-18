@@ -41,7 +41,7 @@ repositories {
 dependencies {
   implementation(gradleApi())
   implementation(localGroovy())
-  implementation("gradle.plugin.com.github.johnrengelman:shadow:7.1.1")
+  implementation("gradle.plugin.com.github.johnrengelman:shadow:8.0.0")
   implementation("com.github.spotbugs.snom:spotbugs-gradle-plugin:5.0.14")
 
   runtimeOnly("com.google.protobuf:protobuf-gradle-plugin:0.8.13")                                          // Enable proto code generation
@@ -49,7 +49,7 @@ dependencies {
   runtimeOnly("com.diffplug.spotless:spotless-plugin-gradle:5.6.1")                                       // Enable a code formatting plugin
   runtimeOnly("com.palantir.gradle.docker:gradle-docker:0.34.0")                             // Enable building Docker containers
   runtimeOnly("gradle.plugin.com.dorongold.plugins:task-tree:1.5")                                       // Adds a 'taskTree' task to print task dependency tree
-  runtimeOnly("gradle.plugin.com.github.johnrengelman:shadow:7.1.1")                           // Enable shading Java dependencies
+  runtimeOnly("gradle.plugin.com.github.johnrengelman:shadow:8.0.0")                           // Enable shading Java dependencies
   runtimeOnly("net.linguica.gradle:maven-settings-plugin:0.5")
   runtimeOnly("gradle.plugin.io.pry.gradle.offline_dependencies:gradle-offline-dependencies-plugin:0.5.0") // Enable creating an offline repository
   runtimeOnly("net.ltgt.gradle:gradle-errorprone-plugin:1.2.1")                                           // Enable errorprone Java static analysis
