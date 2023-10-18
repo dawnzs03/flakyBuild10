@@ -80,7 +80,7 @@ jobs:
       WORKING_BRANCH: "v${{github.event.inputs.RELEASE_VER}}-RC${{github.event.inputs.RC_NUM}}_validations"
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.RC_TAG }}
       - name: Setup GitHub CLI
@@ -111,7 +111,7 @@ jobs:
         py_version: [3.8]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with: 
        ref: ${{env.RC_TAG}}      
     
@@ -176,7 +176,7 @@ jobs:
         py_version: [3.8]
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{env.RC_TAG}}
     - name: Verify ENV values
@@ -282,7 +282,7 @@ jobs:
     needs: generate_shared_pubsub
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: ${{env.RC_TAG}}
     - name: Install Python
@@ -357,7 +357,7 @@ jobs:
     needs: generate_shared_pubsub
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{env.RC_TAG}}
 
@@ -405,7 +405,7 @@ jobs:
     needs: [generate_shared_pubsub]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{env.RC_TAG}}
 
@@ -458,7 +458,7 @@ jobs:
     needs: [generate_shared_pubsub]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{env.RC_TAG}}
       - name: Install Python
@@ -507,7 +507,7 @@ jobs:
     needs: [generate_shared_pubsub]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{env.RC_TAG}}
       - name: Install Python
