@@ -116,7 +116,7 @@ jobs:
        ref: ${{env.RC_TAG}}      
     
     - name: Install Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: ${{matrix.py_version}}
         
@@ -195,7 +195,7 @@ jobs:
         java-version: 11
 
     - name: Install Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: ${{matrix.py_version}}
    
@@ -286,7 +286,7 @@ jobs:
       with:
         ref: ${{env.RC_TAG}}
     - name: Install Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.8'
     
@@ -362,7 +362,7 @@ jobs:
           ref: ${{env.RC_TAG}}
 
       - name: Install Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{matrix.py_version}}
       
@@ -410,7 +410,7 @@ jobs:
           ref: ${{env.RC_TAG}}
 
       - name: Install Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{matrix.py_version}}
       
@@ -462,7 +462,7 @@ jobs:
         with:
           ref: ${{env.RC_TAG}}
       - name: Install Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{matrix.py_version}}
    
@@ -511,7 +511,7 @@ jobs:
         with:
           ref: ${{env.RC_TAG}}
       - name: Install Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{matrix.py_version}}
       
