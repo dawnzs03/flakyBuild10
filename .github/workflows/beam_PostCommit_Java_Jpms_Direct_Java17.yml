@@ -87,7 +87,7 @@ jobs:
             -PcompileAndRunTestsWithJava17
             -Pjava17Home=$JAVA_HOME_17_X64
       - name: Archive code coverage results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: archiveJunit

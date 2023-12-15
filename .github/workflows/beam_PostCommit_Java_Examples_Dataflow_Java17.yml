@@ -86,7 +86,7 @@ jobs:
           gradle-command: :runners:google-cloud-dataflow-java:examples:java17PostCommit
           max-workers: 12
       - name: Upload test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: java-code-coverage-report
           path: "**/build/test-results/**/*.xml"

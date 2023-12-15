@@ -117,12 +117,12 @@ jobs:
             -Pjava17Home=$JAVA_HOME_17_X64 \
           max-workers: 12
       - name: Archive JUnit Test Results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: JUnit Test Results
           path: '**/build/test-results/**/*.xml'
       - name: Archive SpotBugs Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: SpotBugs Results
           path: '**/build/reports/spotbugs/*.html'
